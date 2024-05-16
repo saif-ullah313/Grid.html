@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: #2196F3;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 8px;
+    }
+    .item{
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        font-size: 30px;
+        text-align: center;
+    }
+    .item2{
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        font-size: 30px;
+        text-align: center;
+    }
+    .item2:nth-child(2) {
+  grid-column: 2 /4;
+}
+.item2:nth-child(3) {
+  grid-column: 3/5 ;
+}
+
+   
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Task8</h1>
+    <h2 style="text-align: center;">Grid Layout </h2>
+    <div class="grid-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+    <h2 style="text-align: center;color:black;">Span Grid</h2>
+    <div class="grid-container">
+        <div class="item2">1</div>
+        <div class="item2">2</div>
+        <div class="item2">3</div>
+        <div class="item2">4</div>
+        <div class="item2">5</div>
+        <div class="item2">6</div>
+    </div>
+    <div></div>
+    
+</body>
+</html>
